@@ -1,0 +1,11 @@
+# 统一按 LF 存储，避免 Windows 上提交出 CRLF 差异
+* text=auto eol=lf
+
+# 图片按二进制处理，不做行尾转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+
+# 文档里的图走 Git LFS 也可以，但当前体积很小（几十 KB），直接入库即可

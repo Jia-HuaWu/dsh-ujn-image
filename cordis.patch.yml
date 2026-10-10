@@ -1,0 +1,16 @@
+# ============================================================================
+# dsh-ujn-image — DSH bundle patch
+# ============================================================================
+# 把「济大词元文生图」插件插入 profile 的配置树。
+#
+# 安装方式（本地开发，link 安装）：
+#   dsh plugin --profile desktop add link:E:/DeepseekHarness/dsh-ujn-image
+#   dsh plugin --profile web     add link:E:/DeepseekHarness/dsh-ujn-image
+#
+# 安装后需要重启 DSH：宿主半边注册工具、浏览器半边注册设置页，
+# 两者的装配都发生在启动时（HMR 默认关闭）。
+# ============================================================================
+
+- insert:
+    - id: dsh-ujn-image
+      name: dsh-ujn-image

@@ -1,0 +1,62 @@
+{
+  "name": "dsh-ujn-image",
+  "version": "1.0.0",
+  "description": "济大词元文生图 / 图片编辑：在 DSH 设置页填入济南大学大模型平台的 API Key，即可让 DSH 调用校内 Qwen-Image 模型生成与编辑图片。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "ujn",
+    "image",
+    "text-to-image",
+    "image-editing",
+    "img2img",
+    "qwen-image"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<you>/dsh-ujn-image.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<you>/dsh-ujn-image/issues"
+  },
+  "homepage": "https://github.com/<you>/dsh-ujn-image#readme",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "files": [
+    "lib",
+    "docs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "selftest": "node scripts/selftest.mjs",
+    "selftest:live": "node scripts/selftest.mjs --live"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+# 依赖与构建产物（本插件刻意不依赖任何运行时 npm 包）
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# 生成物 / 临时文件
+*.tmp
+*.log
+*.png.tmp
+.DS_Store
+Thumbs.db
+
+# 本地输出（生成的图片、试跑预览）
+ujn-images/
+previews/
+*.local.*
