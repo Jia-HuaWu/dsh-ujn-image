@@ -132,9 +132,8 @@ dsh plugin --profile desktop add link:E:/DeepseekHarness/dsh-ujn-image
 # 网页版（dsh web）
 dsh plugin --profile web add link:E:/DeepseekHarness/dsh-ujn-image
 
-# 或从 npm / git 安装（发布后）
-dsh plugin --profile desktop add dsh-ujn-image
-dsh plugin --profile desktop add git+https://github.com/<you>/dsh-ujn-image
+# 或从 git 安装
+dsh plugin --profile desktop add git+https://github.com/Jia-HuaWu/dsh-ujn-image
 ```
 
 安装后**重启 DSH**：宿主半边的工具注册与浏览器半边的设置页装配都发生在启动时。

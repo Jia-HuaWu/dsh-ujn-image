@@ -16,12 +16,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<you>/dsh-ujn-image.git"
+    "url": "git+https://github.com/Jia-HuaWu/dsh-ujn-image.git"
   },
   "bugs": {
-    "url": "https://github.com/<you>/dsh-ujn-image/issues"
+    "url": "https://github.com/Jia-HuaWu/dsh-ujn-image/issues"
   },
-  "homepage": "https://github.com/<you>/dsh-ujn-image#readme",
+  "homepage": "https://github.com/Jia-HuaWu/dsh-ujn-image#readme",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
